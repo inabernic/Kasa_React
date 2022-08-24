@@ -5,3 +5,5 @@ function Accommodation() {
         </div>
     )
 }
+
+export default Accommodation
