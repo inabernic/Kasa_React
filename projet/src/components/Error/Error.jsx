@@ -1,10 +1,9 @@
 import React from "react";
 import './Error.css';
 import {
-  BrowserRouter as Router,
-  Link,
-} from "react-router-dom";
-
+    BrowserRouter as
+    Link,
+  } from "react-router-dom";
 // -------------------------------
 
 export default function Error () {

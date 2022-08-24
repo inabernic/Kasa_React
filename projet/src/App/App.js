@@ -21,7 +21,7 @@ export default function App() {
       <div className="navbar">
         <div className="logo">
           <Link className="nav" to="/">
-            <img src="../LOGO.svg" alt="logo application" />
+            <img src="../logo.svg" alt="logo application" />
           </Link>
         </div>
         <div className="list-menu">
@@ -34,8 +34,8 @@ export default function App() {
       </div>
 
       <Routes>
-        <Route path="/a_propos" exact component={Accommodation} />
-        <Route path="/" exact component={Home} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/Fiche_logement" element={<Accommodation />} />
         <Route render={() => <Error />} />
       </Routes>
     </Router>
