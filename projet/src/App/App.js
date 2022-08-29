@@ -1,8 +1,7 @@
 import React from "react";
 import './App.css';
 import {
-  Routes,
-  Route
+  BrowserRouter as Routes, Route
 } from "react-router-dom";
 
 // VIEWS -------------------------------------------

@@ -1,6 +1,6 @@
 import React from 'react'
 import {useState, useEffect} from 'react';
-// import AccomodationCard from './components/AccomodationCard/AccomodationCard';
+import AccomodationCard from '../../components/AccomodationCard/AccomodationCard';
 import './Home.css'
 
 export default function Home() {
@@ -18,6 +18,7 @@ export default function Home() {
 
 
 return (
+
     <div className="body-home">
         <div className="background_title">
             <div className="title_img">
@@ -30,7 +31,7 @@ return (
 
         <div className="background">
             <div className="location-card-info">
-                {/* {locations.map((location) => <AccomodationCard key={location.id} location={location}/>)} */}
+                {locations.map((location) => <AccomodationCard key={location.id} location={location}/>)}
             </div>
         </div>
 
