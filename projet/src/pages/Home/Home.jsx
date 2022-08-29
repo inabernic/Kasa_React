@@ -1,6 +1,12 @@
 import React from 'react'
 import {useState, useEffect} from 'react';
+
+
+// ------- COMPONENTS -------------
+import Nav from '../../components/Nav/Nav';
 import AccomodationCard from '../../components/AccomodationCard/AccomodationCard';
+import Footer from '../../components/Footer/Footer'
+// -------- IMPORT STYLE -----------------
 import './Home.css'
 
 export default function Home() {
@@ -18,6 +24,9 @@ export default function Home() {
 
 
 return (
+    
+    <div className="home">
+        <Nav/>
 
     <div className="body-home">
         <div className="background_title">
@@ -34,7 +43,9 @@ return (
                 {locations.map((location) => <AccomodationCard key={location.id} location={location}/>)}
             </div>
         </div>
+    </div>
 
+    <Footer/>
     </div>
 );
 }
