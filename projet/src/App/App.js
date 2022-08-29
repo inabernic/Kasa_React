@@ -1,8 +1,6 @@
 import React from "react";
 import './App.css';
-import {
-  BrowserRouter as Routes, Route
-} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 // VIEWS -------------------------------------------
 
@@ -19,7 +17,7 @@ export default function App() {
     <Routes>
       <Route exact path="/" element={<Home />} />
       <Route exact path="/Fiche_logement" element={<AccommodationSheet />} />
-      <Route render={() => <Error />} />
+      <Route path='/*' exact={true} element={<Error />} />
     </Routes>
 
   );

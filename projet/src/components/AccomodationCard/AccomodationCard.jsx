@@ -1,8 +1,6 @@
-/* import React from 'react';
+import React from 'react';
 import './AccomodationCard.css';
-import {
-    BrowserRouter as Link,
-} from "react-router-dom";
+import { Link} from "react-router-dom";
 
 
 // -------------------------------------------
@@ -16,11 +14,8 @@ export default function AccomodationCard(props) {
                         <h5 className="location-title">{props.location.title}</h5>
                         <div className="location-bgd"></div>
                     </div>
-                 </Link>
+                </Link>
             </div>
         </> 
     )
 }
-
-
-  */
