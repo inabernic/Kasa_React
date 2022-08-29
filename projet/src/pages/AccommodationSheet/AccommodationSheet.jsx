@@ -1,4 +1,4 @@
-function Accommodation() {
+function AccommodationSheet() {
     return (
         <div>
             <h1>Fiche-logement 🧮</h1>
@@ -6,4 +6,4 @@ function Accommodation() {
     )
 }
 
-export default Accommodation
+export default AccommodationSheet
