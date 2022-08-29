@@ -1,8 +1,6 @@
-import React from 'react';
+/* import React from 'react';
 import './Nav.css';
-import {
-    BrowserRouter as Link
-  } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // -------------------------------------------
 
@@ -24,4 +22,4 @@ export default function Nav() {
         </div>
       </div>
     )
-}
+} */

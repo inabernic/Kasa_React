@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import './AccomodationCard.css';
 import {
     BrowserRouter as Link,
@@ -23,4 +23,4 @@ export default function AccomodationCard(props) {
 }
 
 
- 
+  */
