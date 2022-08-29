@@ -3,15 +3,17 @@ import { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 
 // ------- COMPONENTS -------------
-
+import Nav from '../../components/Nav/Nav';
+import AccomodationCard from '../../components/AccomodationCard/AccomodationCard';
+import Footer from '../../components/Footer/Footer'
 
 // -------- IMPORT STYLE -----------------
 
-import './AccomodationSheet.css';
+import './AccommodationSheet.css';
 
 // ----------------------------------------------------
 
-export default function AccomodationSheet() {
+export default function AccommodationSheet() {
     const [location, setLocation] = useState({tags:[], equipments:[], pictures:[], rating:'', host:{'name':'', 'picture':''}});
 
     let { id } = useParams();
@@ -32,6 +34,8 @@ export default function AccomodationSheet() {
 
 
     return (
+        <div className="home">
+        <Nav/>
         <div className="body_location_page">
             <div className="slideshow_location">
                 
@@ -45,7 +49,7 @@ export default function AccomodationSheet() {
                     </div>
 
                     <div className="main-container-tag">
-                        {location.tags.map((tag) => <Tag content={tag} key={tag}/>)}
+                        {/* {location.tags.map((tag) => <Tag content={tag} key={tag}/>)} */}
                     </div>
                 </div>
 
@@ -70,6 +74,7 @@ export default function AccomodationSheet() {
                 </div>
             </div>
 
+        </div>
         </div>
     );
 }
