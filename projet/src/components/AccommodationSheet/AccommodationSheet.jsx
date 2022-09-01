@@ -1,11 +1,9 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useParams } from "react-router-dom";
 
 // ------- COMPONENTS -------------
-import Nav from '../../components/Nav/Nav';
-import AccomodationCard from '../../components/AccomodationCard/AccomodationCard';
-import Footer from '../../components/Footer/Footer'
+import Nav from '../Nav/Nav';
 
 // -------- IMPORT STYLE -----------------
 
@@ -18,24 +16,16 @@ export default function AccommodationSheet() {
 
     let { id } = useParams();
 
-    useEffect (function (){
-        fetch('/locations.json')
-        .then((response) => {
-            return response.json()
-        })
-        .then((data) => {
-            for (let i=0; i<data.length; i++){
-                if (data[i].id == id){
-                    setLocation(data[i])
-                }
-            }
-        })
-    },[]);
 
+
+  /*   la recuperation
+    la boucle
+    l'affichage  des apartement*/
+    
+    
 
     return (
         <div className="home">
-        <Nav/>
         <div className="body_location_page">
             <div className="slideshow_location">
                 
@@ -49,7 +39,7 @@ export default function AccommodationSheet() {
                     </div>
 
                     <div className="main-container-tag">
-                        {/* {location.tags.map((tag) => <Tag content={tag} key={tag}/>)} */}
+                         {/* ................... */}
                     </div>
                 </div>
 
@@ -70,7 +60,6 @@ export default function AccommodationSheet() {
                 </div>
                 <div className="accordion-container-right">
                    
-
                 </div>
             </div>
 

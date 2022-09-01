@@ -1,8 +1,6 @@
 /* GENERAL */
 .navbar {
     margin-top: 54px;
-    margin-left: 50px;
-    margin-right: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -13,9 +11,6 @@
 
 .nav img {
     width: 250px;
-    margin-left: 108px;
-    position: absolute;
-    top: 20px;
 }
 
 /* MENU */
@@ -23,17 +18,13 @@
 .list-menu {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    width: 46%;
+    justify-content: space-between;
 }
 
 .navli {
-    margin-right: 70px;
-    text-align: right;
     font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 142.6%;
-    /* or 34px */
 }
 
 .navli :active {
@@ -51,7 +42,7 @@
 @media (max-width: 375px) {
 
     .navbar {
-        margin-top: 54px;
+        margin-top: 24px;
         margin-left: 20px;
         margin-right: 20px;
         display: flex;
@@ -61,28 +52,17 @@
         flex-wrap: nowrap;
     }
 
-    .nav img {
-        width: 98px;
-        margin-left: 5px;
-        position: absolute;
-        top: 20px;
+    .logo{
+        width: 54%;
     }
+
+   .nav img {
+        width: 70%;
+    } 
     
     .navli {
-        margin-right: 20px;
-        text-align: right;
-        font-family: "Montserrat", sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 142.6%;
-        margin-top: -25px;
+        text-transform: uppercase;
+        font-size: small;
     }
-
-    .list-menu {
-        top: 20px;
-        left: 20px;
-        right: -10px;
-    }
-
+    
 }

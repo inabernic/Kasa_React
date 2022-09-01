@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 // VIEWS -------------------------------------------
 
 import Home from '../pages/Home/Home'
-import AccommodationSheet from '../pages/AccommodationSheet/AccommodationSheet'
+import AccommodationSheet from '../components/AccommodationSheet/AccommodationSheet'
 import Error from '../pages/Error/Error'
 
 
