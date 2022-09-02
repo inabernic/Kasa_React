@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
 import { useParams } from "react-router-dom";
-
+import { useEffect } from 'react';
 // ------- COMPONENTS -------------
-import Nav from '../Nav/Nav';
+import AccomodationCard from '../AccomodationCard/AccomodationCard'
 
 // -------- IMPORT STYLE -----------------
 
@@ -16,13 +16,35 @@ export default function AccommodationSheet() {
 
     let { id } = useParams();
 
+    
 
 
   /*   la recuperation
     la boucle
     l'affichage  des apartement*/
+
+
+
+    /*   useEffect(() => {
+    fetch('/locations.json')
+        .then((response) => {
+            return response.json()
+        })
+        .then((data) => {
+            setLocations(data)
+        })
+}, []) */
+
+useEffect(() => {
+    fetch(`http://localhost:3000/logements.json`)
+         .then((response) => response.json()
+         .then(({ appartData }) => console.log(appartData))
+         .catch((error) => console.log(error))
+     )
+ }, [])
+
     
-    
+    const [locations, setLocations] = useState([]);
 
     return (
         <div className="home">
@@ -39,6 +61,7 @@ export default function AccommodationSheet() {
                     </div>
 
                     <div className="main-container-tag">
+                       {locations.map((location) => <AccomodationCard key={location.id} location={location}/>)} 
                          {/* ................... */}
                     </div>
                 </div>

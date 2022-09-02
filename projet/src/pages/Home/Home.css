@@ -3,12 +3,39 @@
 }
 .body-home {
     align-items: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* BACKGROUND LOCATIONCARD - HOME PAGE and IMG background */
+.img_title{
+    /* parent */
+    position: relative;
+    width: 92%;
+    height: 111px;
+    margin: 10px;
+}
+
+.back_img{
+    /* child 1 */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    border-radius: 15px;
+}
+
+.back_title{
+    /* child 2 */
+    width: 100%;
 }
 
 .title_home {
     /* Chez vous, partout et ailleurs */
-    position: absolute;
-    z-index: 3;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -18,26 +45,23 @@
     top: 39%;
     color: #FFFFFF;
     transform: translate(-50%, -50%);
-    width: 100%;
     margin: 0;
     text-align: center;
 }
 
-.title_img img{
+.back_img img{
     width: 100%;
     height: 100%;
     margin: auto;
-    background: rgba(0,0,0,.5);
-    z-index: 2;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
-/* BACKGROUND LOCATIONCARD - HOME PAGE and IMG background */
-.ackground_container, .background_title{
+.background_container{
     width: 87%;
+    height: 200px;
     margin: 20px auto;
     background: #F7F7F7;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 .location-card-info {
@@ -49,50 +73,41 @@
 @media (max-width: 375px) {
 
     /* STYLE - IMG HEADER HOME PAGE */
-
-     .title_img img {
-        width: 335px;
+    .img_title {
+        margin-left: 5%;
+        z-index: 0;
         height: 111px;
+    }
+
+    .back_img img {
+        object-fit: cover;
     } 
 
-    .background_title {
-        width: 335px;
-        height: 111px;
-        margin-bottom: -20%;
-        margin-left: 5%;
+    .back_title{
+        background: rgba(0,0,0,.5);
+        z-index: 2;
     }
 
     .title_home {
-        right: 60%;
-        /* left: 60%; */
-        top: 25%;
-        /* bottom: 80.05%; */
-        bottom: 50.05%;
-        font-size: 21px;
-        line-height: 100%;
-        text-align: center;
-    }
-
-     .bgd {
+        height: max-content;
         position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        background: rgba(0,0,0,.5);
-        z-index: 2;
-    } 
+        width: 54%;
+        left: 34%;
+        top: 47%;
+        font-size: 23px;
+        text-align: left;
+    }
 
 
     /* BACKGROUND LOCATIONCARD - HOME PAGE */
-    .ackground_container {
+    .background_container {
         width: 100%;
         left: 0%;
         right: 0%;
         top: 0%;
         bottom: 0%;
         background: none;
-        border-radius: 25px;
+        border-radius: 15px;
         margin-left: -20px;
     }
 
