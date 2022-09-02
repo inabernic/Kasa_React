@@ -1,11 +1,27 @@
 #root{
     margin-left: 2px
 }
+
+.home{
+max-width: 1400px;
+}
+
+.navbar{
+    width: 95%;
+    padding: 25px;
+}
+
+.logo{
+    width: 50%;
+}
+
 .body-home {
     align-items: center;
-    width: 100%;
+    width: 96%;
     display: flex;
     flex-wrap: wrap;
+    margin: 25px;
+    margin-top: 0;
 }
 
 
@@ -13,16 +29,15 @@
 .img_title{
     /* parent */
     position: relative;
-    width: 92%;
-    height: 111px;
-    margin: 10px;
+    width: 100%;
+    height: 159px;
 }
 
 .back_img{
     /* child 1 */
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 159px;
     top: 0;
     left: 0;
     opacity: 0.7;
@@ -32,6 +47,8 @@
 .back_title{
     /* child 2 */
     width: 100%;
+    background:rgb(88 100 130 / 50%);
+    z-index: 2;
 }
 
 .title_home {
@@ -39,14 +56,13 @@
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 41px;
-    line-height: 142.6%;
-    left: 51%;
-    top: 39%;
-    color: #FFFFFF;
-    transform: translate(-50%, -50%);
-    margin: 0;
+    height: max-content;
+    position: absolute;
+    width: 100%;
+    top: 8%;
+    font-size: 47px;
     text-align: center;
+    color: #FFFFFF;
 }
 
 .back_img img{
@@ -54,12 +70,13 @@
     height: 100%;
     margin: auto;
     border-radius: 15px;
+    object-fit: cover;
 }
 
 .background_container{
-    width: 87%;
-    height: 200px;
-    margin: 20px auto;
+    width: 100%;
+    margin-top: 15px;
+   /*  margin: 20px auto; */
     background: #F7F7F7;
     border-radius: 15px;
 }
@@ -74,9 +91,12 @@
 
     /* STYLE - IMG HEADER HOME PAGE */
     .img_title {
-        margin-left: 5%;
         z-index: 0;
         height: 111px;
+    }
+
+    .back_img{
+height: 111px;
     }
 
     .back_img img {
@@ -90,10 +110,9 @@
 
     .title_home {
         height: max-content;
-        position: absolute;
         width: 54%;
-        left: 34%;
-        top: 47%;
+        left: 10%;
+        top: 13%;
         font-size: 23px;
         text-align: left;
     }
@@ -106,14 +125,11 @@
         right: 0%;
         top: 0%;
         bottom: 0%;
-        background: none;
         border-radius: 15px;
-        margin-left: -20px;
     }
 
     .location-card-info {
         display: flex;
         flex-direction: column;
-        margin-left: -20px;
     }
 }
