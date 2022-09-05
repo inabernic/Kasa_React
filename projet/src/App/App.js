@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 // VIEWS -------------------------------------------
 
 import Home from '../pages/Home/Home'
-import AccommodationSheet from '../components/AccommodationSheet/AccommodationSheet'
+import AccommodationList from '../components/AccommodationList/AccommodationList'
 import Error from '../pages/Error/Error'
 
 
@@ -16,7 +16,7 @@ export default function App() {
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />
-      <Route exact path="/Fiche_logement" element={<AccommodationSheet />} />
+      <Route exact path="/Fiche_logement" element={<AccommodationList />} />
       <Route path='/*' exact={true} element={<Error />} />
     </Routes>
 

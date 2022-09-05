@@ -2,16 +2,19 @@ import React from 'react'
 import { useState } from 'react';
 import { useParams } from "react-router-dom";
 import { useEffect } from 'react';
+import { useFetch } from '../../utils/hooks'
+
+
 // ------- COMPONENTS -------------
 import AccomodationCard from '../AccomodationCard/AccomodationCard'
 
 // -------- IMPORT STYLE -----------------
 
-import './AccommodationSheet.css';
+import './AccommodationList.css';
 
 // ----------------------------------------------------
 
-export default function AccommodationSheet() {
+export default function AccommodationList() {
     const [location, setLocation] = useState({tags:[], equipments:[], pictures:[], rating:'', host:{'name':'', 'picture':''}});
 
     let { id } = useParams();
@@ -19,10 +22,18 @@ export default function AccommodationSheet() {
     
 
 
-  /*   la recuperation
-    la boucle
-    l'affichage  des apartement*/
+  /*   la recuperation data */
 
+ const { data, isLoading, error } = useFetch(`https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P9+React+1/logements.json`)
+
+    const { apartData } = data
+
+
+    /*   la boucle  */
+    /* l'affichage  des apartement*/
+
+
+   
 
 
     /*   useEffect(() => {
@@ -35,16 +46,23 @@ export default function AccommodationSheet() {
         })
 }, []) */
 
+
+
+
+/* 
 useEffect(() => {
+
     fetch(`http://localhost:3000/logements.json`)
          .then((response) => response.json()
          .then(({ appartData }) => console.log(appartData))
          .catch((error) => console.log(error))
      )
- }, [])
+ }, []) */
 
-    
-    const [locations, setLocations] = useState([]);
+
+ if (error) {
+    return <span>Il y a un problème</span>  
+    }
 
     return (
         <div className="home">
@@ -61,7 +79,7 @@ useEffect(() => {
                     </div>
 
                     <div className="main-container-tag">
-                       {locations.map((location) => <AccomodationCard key={location.id} location={location}/>)} 
+                      {/*  {locations.map((location) => <AccomodationCard key={location.id} location={location}/>)} */} 
                          {/* ................... */}
                     </div>
                 </div>

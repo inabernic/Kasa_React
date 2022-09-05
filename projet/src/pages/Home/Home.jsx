@@ -4,7 +4,7 @@ import {useState, useEffect} from 'react';
 
 // ------- COMPONENTS -------------
 import Nav from '../../components/Nav/Nav';
-import AccommodationSheet from '../../components/AccommodationSheet/AccommodationSheet';
+import AccommodationList from '../../components/AccommodationList/AccommodationList';
 import Footer from '../../components/Footer/Footer'
 // -------- IMPORT STYLE -----------------
 import './Home.css'
@@ -28,7 +28,7 @@ return (
 
         <div className="background_container">
             <div className="location-card-info">
-                <AccommodationSheet />
+                <AccommodationList />
             </div>
         </div>
     </div>
