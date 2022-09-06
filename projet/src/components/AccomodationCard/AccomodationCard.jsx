@@ -20,7 +20,7 @@ const StyledLink = styled(Link)`
 
 
 export default function AccomodationCard(props) {
-    const[label]=useState(1)
+    const[label] = useState(1)
     return (
         
             <div>

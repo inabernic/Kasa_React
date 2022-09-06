@@ -1,12 +1,10 @@
-import React from 'react'
-import { useState } from 'react';
-import { useParams } from "react-router-dom";
-import { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+ import { useParams } from "react-router-dom";
 import { useFetch } from '../../utils/hooks'
-
+import { SafeAreaView, FlatList, StyleSheet} from 'react'; 
 
 // ------- COMPONENTS -------------
-import AccomodationCard from '../AccomodationCard/AccomodationCard'
+import AccomodationCard from '../AccomodationCard/AccomodationCard' 
 
 // -------- IMPORT STYLE -----------------
 
@@ -14,57 +12,27 @@ import './AccommodationList.css';
 
 // ----------------------------------------------------
 
-export default function AccommodationList() {
-    const [location, setLocation] = useState({tags:[], equipments:[], pictures:[], rating:'', host:{'name':'', 'picture':''}});
 
-    let { id } = useParams();
-
-    
+ export default function AccommodationList() {
+     const [logement, setLocation, error, logements] = useState({tags:[], equipments:[], pictures:[], rating:'', host:{'name':'', 'picture':''}});
+   let { id } = useParams(); 
 
 
-  /*   la recuperation data */
-
- const { data, isLoading, error } = useFetch(`https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P9+React+1/logements.json`)
-
-    const { apartData } = data
+     /*   la recuperation data d'un fichier en local */
+ fetch(` http://localhost:3001/logements`)
+ .then ((response) => {
+    response = response.json()
+    response.then((result) => {
+        console.log(result)
+     })
+},  []) 
 
 
     /*   la boucle  */
     /* l'affichage  des apartement*/
 
 
-   
-
-
-    /*   useEffect(() => {
-    fetch('/locations.json')
-        .then((response) => {
-            return response.json()
-        })
-        .then((data) => {
-            setLocations(data)
-        })
-}, []) */
-
-
-
-
-/* 
-useEffect(() => {
-
-    fetch(`http://localhost:3000/logements.json`)
-         .then((response) => response.json()
-         .then(({ appartData }) => console.log(appartData))
-         .catch((error) => console.log(error))
-     )
- }, []) */
-
-
- if (error) {
-    return <span>Il y a un problème</span>  
-    }
-
-    return (
+     return (
         <div className="home">
         <div className="body_location_page">
             <div className="slideshow_location">
@@ -74,13 +42,12 @@ useEffect(() => {
             <div className="presentation">
                 <div className="location_header">
                     <div>
-                        <h2 className="title_locationpage">{location.title}</h2>
-                        <p className="subtitle_locationpage">{location.location}</p>
+                        <h2 className="title_locationpage">{logement.title}</h2>
+                        <p className="subtitle_locationpage">{logement.location}</p>
                     </div>
 
-                    <div className="main-container-tag">
-                      {/*  {locations.map((location) => <AccomodationCard key={location.id} location={location}/>)} */} 
-                         {/* ................... */}
+                    <div className="main-container-tag"> 
+                      {/* {logements.map((location) => <AccomodationCard key={logement.id} location={location}/>)}  */}
                     </div>
                 </div>
 
