@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
  import { useParams } from "react-router-dom";
-import { useFetch } from '../../utils/hooks'
-import { SafeAreaView, FlatList, StyleSheet} from 'react'; 
 
 // ------- COMPONENTS -------------
 import AccomodationCard from '../AccomodationCard/AccomodationCard' 
@@ -12,31 +10,37 @@ import './AccommodationList.css';
 
 // ----------------------------------------------------
 
-
  export default function AccommodationList() {
-     const [logement, setLocation, error, logements] = useState({tags:[], equipments:[], pictures:[], rating:'', host:{'name':'', 'picture':''}});
-   let { id } = useParams(); 
-
-
-     /*   la recuperation data d'un fichier en local */
- fetch(` http://localhost:3001/logements`)
- .then ((response) => {
-    response = response.json()
-    response.then((result) => {
-        console.log(result)
-     })
-},  []) 
-
+     const [logement, setLogement] = useState({tags:[], equipments:[], pictures:[], rating:'', host:{'name':'', 'picture':''}});
+     let { id } = useParams(); 
 
     /*   la boucle  */
     /* l'affichage  des apartement*/
+    
+    /*   la recuperation data d'un fichier en local */
+   useEffect(() => {
+     fetch(` http://localhost:3001/logements`)
+    .then ((response) => {
+       return response.json()
+    })
+      .then((data) => {
+        for (let i=0; i<data.length; i++){
+            if (data[i].id === id){
+                setLogement(data[i])
+            }
+        }
+        setTimeout(() =>{
+        }, 1500);
+           console.log(data)
+        })
+}, [])
 
 
      return (
         <div className="home">
         <div className="body_location_page">
             <div className="slideshow_location">
-                
+              <div img={logement.pictures}></div>
             </div>
 
             <div className="presentation">
@@ -47,17 +51,16 @@ import './AccommodationList.css';
                     </div>
 
                     <div className="main-container-tag"> 
-                      {/* {logements.map((location) => <AccomodationCard key={logement.id} location={location}/>)}  */}
+
                     </div>
                 </div>
 
                 <div className="location_subheader">
-                    <div>
-                       
+                    <div name={logement.host.name} picture={logement.host.picture}>
                     </div>
 
                     <div className="main-container-stars">
-                       
+                       <div rating = {logement.rating} key={logement.id}></div>
                     </div>
                 </div>
             </div>

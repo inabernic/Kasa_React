@@ -20,15 +20,12 @@ const StyledLink = styled(Link)`
 
 
 export default function AccomodationCard(props) {
-    const[label] = useState(1)
     return (
         
             <div>
                 <Link className="linklocation" to={"/locations/"+props.location.id}>
-                {/* <StyledLink to="/">Test</StyledLink> */}
                     <div className="location-card" style={{backgroundImage:`url(${props.location.pictures[0]})`}}>
                         <h5 className="location-title">{props.location.title}</h5>
-                        {/* <CardLabel label={label}/> */}
                         <div className="location-bgd"></div>
                     </div>
                 </Link>
