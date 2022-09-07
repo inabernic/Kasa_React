@@ -1,5 +1,5 @@
-import React, {FunctionComponent, useState, useEffect } from 'react';
- import { useParams } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 // ------- COMPONENTS -------------
 import AccomodationCard from '../AccomodationCard/AccomodationCard' 
@@ -10,58 +10,41 @@ import './AccommodationList.css';
 
 // ----------------------------------------------------
 
-const AccommodationList: FunctionComponent = () => {
-     const [logement, setLogement] = useState({tags:[], equipments:[], pictures:[], rating:'', host:{'name':'', 'picture':''}});
-     let { id } = useParams(); 
+function AccommodationList(){
+    const[data, setData] = useState([]);
 
-const AppartProfile = [
-    {
-        name: 'Ina',
-        jobTitle: 'bucsuie',
-       // picture: DefaultPicture,
-    },
-    {
-        name: 'Dima',
-        jobTitle: 'fumega',
-       // picture: DefaultPicture,
-    }
-]
+     /*   la recuperation data d'un fichier en local */
 
-    /*   la recuperation data d'un fichier en local */
-   useEffect(() => {
-     fetch(` http://localhost:3001/logements`)
-    .then ((response) => {
-       return response.json()
-    })
-      .then((data) => {
-        //this.setState({post:{data}})
-        for (let i=0; i<data.length; i++){
-            if (data[i].id === id){
-                setLogement(data[i])
-            }
-        }
+    //similaire à composantDidMount et componentDidUpdate
+    useEffect(() =>{
+        const fetchData = async () =>{
+            const result = await axios (` http://localhost:3001/logements`,);
+            setData (result.data);
+            console.log("updated");
+        };
+        fetchData();
+        console.log("mounted");
         setTimeout(() =>{
-        }, 1500);
-           console.log(data)
-        })
-}, []);
+        }, 500);
+    }, [])
+console.log(data);
 
 
     /*   la boucle  */
     /* l'affichage  des apartement*/
 
-     return (
+    return (
         <div className="container-list">
-            <h1>La liste des appartement: 👩</h1>
-            <p>Il y a {data.lenght} appa dans la liste</p>
-            {AppartProfile.map((profile, index) => (
-                <AccomodationCard
-                    key={`${profile.name}-${id}`}
-                    label={profile.jobTitle}
-                    picture={profile.picture}
-                    title={profile.name}
-                />
-            ))}
+            <ul>
+                {data.map(item =>(
+                    <AccomodationCard
+                        key ={item.id}
+                        title= {item.title}
+                    />
+                ))
+                }
+            </ul>
+
         </div>
      )
 }
