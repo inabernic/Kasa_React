@@ -27,12 +27,9 @@ return (
         </div>
 
         <div className="background_container">
-            <div className="location-card-info">
-                <AccommodationList />
-            </div>
+        <AccommodationList />
         </div>
     </div>
-
     <Footer />
 </div>
 );

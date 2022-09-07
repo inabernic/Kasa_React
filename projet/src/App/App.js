@@ -16,7 +16,7 @@ export default function App() {
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />
-      <Route exact path="/logement/:id" element={<AccomodationCard />} />
+      <Route exact path="/logement/:id" render={(props) => <AccomodationCard {...props} />} />
       <Route path='/*' exact={true} element={<Error />} />
     </Routes>
 
