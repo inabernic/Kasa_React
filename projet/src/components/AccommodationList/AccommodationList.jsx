@@ -40,7 +40,7 @@ console.log(data);
                 {data.map(item =>(
                     <AccomodationCard
                         key ={item.id}
-                        title= {item.title}
+                        item ={item}
                     />
                     
                 ))

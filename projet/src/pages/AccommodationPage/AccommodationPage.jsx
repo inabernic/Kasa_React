@@ -22,8 +22,11 @@ class AccomodationPage extends Component{
             <div className="navli">
             {/* <Link className="page" to="/logements/{id}">La page de l'appart</Link> */}
           </div>
+
+          
+         {/*    recuperation depuis l'url
             <h1>La page du logements avec l'id: {id}</h1>
-            <h5 className="location-title">{title}</h5>
+            <h5 className="location-title">{title}</h5> */}
             </div>
              <Footer />
              </div>

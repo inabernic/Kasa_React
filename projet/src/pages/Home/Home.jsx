@@ -11,13 +11,6 @@ import './Home.css'
 
 export default function Home() {
 
-    let navigate = useNavigate();
-
-    function handleClick() {
-        navigate("/logements/:id");
-    }
-
-
 return (
 
 <div className="home">
@@ -34,7 +27,7 @@ return (
         </div>
 
         <div className="background_container">
-        <AccommodationList onClick={handleClick} />
+        <AccommodationList  />
         </div>
     </div>
     <Footer />
