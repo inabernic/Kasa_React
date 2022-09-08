@@ -16,6 +16,7 @@ ul{
     position: relative;
     margin-top: 35px;
     margin-left: 35px;
+    cursor: pointer;
 } 
 
 .location-card img{

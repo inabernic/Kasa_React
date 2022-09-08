@@ -1,6 +1,6 @@
-import React from 'react'
-import {useState, useEffect} from 'react';
-
+import React from 'react';
+import {useState, useEffect} from 'react'
+import { useNavigate } from "react-router-dom";
 
 // ------- COMPONENTS -------------
 import Nav from '../../components/Nav/Nav';
@@ -10,6 +10,13 @@ import Footer from '../../components/Footer/Footer'
 import './Home.css'
 
 export default function Home() {
+
+    let navigate = useNavigate();
+
+    function handleClick() {
+        navigate("/logements/:id");
+    }
+
 
 return (
 
@@ -27,7 +34,7 @@ return (
         </div>
 
         <div className="background_container">
-        <AccommodationList />
+        <AccommodationList onClick={handleClick} />
         </div>
     </div>
     <Footer />

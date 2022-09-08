@@ -3,6 +3,9 @@ import { Link} from "react-router-dom";
 import{ Component} from 'react'
 import './AccomodationCard.css';
 
+// ------- COMPONENTS -------------
+//import AccomodationPage from '../AccomodationCard/AccomodationPage' 
+
 //import styled from 'styled-components;'
 // -------------------------------------------
 /* const CardLabel = styled.span`
@@ -21,18 +24,18 @@ const StyledLink = styled(Link)`
 class AccomodationCard extends Component{
     constructor (props) {
         super (props)
+        console.log(props)
         this.state = {
             post:{}
         }
     }
     render(){
-        const {id, label, picture, title} = this.props
+        const {label, picture, title} = this.props
         return( 
             <div className="location-card"> 
-            <Link className="linklocation"  to={"/logements/"} >
+            <Link className="linklocation"  to={"/logements/{id}"} >
     
             {/* <div className="location-card" style={{backgroundImage:`url(${this.props.location.pictures[0]})`}}> */}
-                
                     <div style={{ display: 'flex', flexDirection: 'column', padding: 15 }}>
                         <span>{label}</span>
                         <img src={picture} alt="foto" />

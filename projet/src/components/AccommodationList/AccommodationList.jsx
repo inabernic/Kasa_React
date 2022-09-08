@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link} from "react-router-dom";
 
 // ------- COMPONENTS -------------
 import AccomodationCard from '../AccomodationCard/AccomodationCard' 
@@ -34,17 +35,17 @@ console.log(data);
     /* l'affichage  des apartement*/
 
     return (
-        <div className="container-list">
-            <ul>
+        <div className="container-list">          
+            <ul>       
                 {data.map(item =>(
                     <AccomodationCard
                         key ={item.id}
                         title= {item.title}
                     />
+                    
                 ))
-                }
+                }      
             </ul>
-
         </div>
      )
 }
