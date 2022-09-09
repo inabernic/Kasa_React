@@ -43,7 +43,7 @@ max-width: 1400px;
 .back_title{
     /* child 2 */
     width: 100%;
-    background:rgb(88 100 130 / 50%);
+    background:rgb(84 89 102 / 50%);
     z-index: 2;
 }
 
@@ -141,7 +141,7 @@ height: 111px;
     } 
 
     .back_title{
-        background: rgba(0,0,0,.5);
+        background:rgb(84 89 102 / 50%);
         z-index: 2;
     }
 
