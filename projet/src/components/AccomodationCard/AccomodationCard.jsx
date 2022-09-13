@@ -21,10 +21,8 @@ class AccomodationCard extends Component{
         return( 
             <div className="location-card"> 
             <Link className="linklocation"  to={"/logements/" + item.id } >
-    
-            {/* <div className="location-card" style={{backgroundImage:`url(${this.props.location.pictures[0]})`}}> */}
+
                     <div style={{ display: 'flex', flexDirection: 'column', padding: 1 }}>
-                        {/* <span>{item.description}</span> */}
                         <img src={item.cover} alt="foto" />
                         <h5 className="location-title">{item.title}</h5>
                     </div>   

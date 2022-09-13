@@ -1,12 +1,18 @@
+.container_page{
+    max-width: 1400px;
+}
 .home{
-max-width: 1400px;
+    display: flex;
+    align-items: center;
+    width: 93%;
+    margin: 3rem;
 }
 
-.navbar{
+/* .navbar{
     width: 95%;
     margin: 25px;
     padding-top: 25px;
-}
+} */
 
 .logo{
     width: 50%;
@@ -14,10 +20,9 @@ max-width: 1400px;
 
 .body-home {
     align-items: center;
-    width: 96%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin: 25px;
 }
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import {useState, useEffect} from 'react'
-import { useNavigate } from "react-router-dom";
+//import {useState, useEffect} from 'react'
+//import { useNavigate } from "react-router-dom";
 
 // ------- COMPONENTS -------------
 import Nav from '../../components/Nav/Nav';
@@ -12,10 +12,10 @@ import './Home.css'
 export default function Home() {
 
 return (
+    <div className='container_page'>
 
-<div className="home">
     <Nav />
-
+    <div className="home">
     <div className="body-home">
         <div className="img_title">
             <div className="back_img">
@@ -29,6 +29,7 @@ return (
         <div className="background_container">
         <AccommodationList  />
         </div>
+    </div>
     </div>
     <Footer />
 </div>

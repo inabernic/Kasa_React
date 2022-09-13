@@ -2,10 +2,7 @@
 ul{
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
-    margin: 0;
-    padding-inline-start: 0;
-    margin-block-start: 0.6rem;
+    list-style: none;
 }
 
 .location-card{
@@ -17,8 +14,7 @@ ul{
     background-size: cover;
     background-position: center;
     position: relative;
-    margin: 1rem;
-
+    margin: 1.5rem;
     cursor: pointer;
 } 
 
