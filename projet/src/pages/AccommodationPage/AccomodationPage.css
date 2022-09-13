@@ -29,6 +29,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 55%;
 }
 
 .location_subheader {
@@ -38,6 +39,7 @@
     align-items: center; 
     margin-right: 10%;
     margin-bottom: 10px;
+    width: 45%;
 }
 
 .main-container-tag {
@@ -58,7 +60,7 @@
     flex-direction: row; 
     justify-content: space-around;
     margin-left: 3.5%;
-    width: 100%;
+    width: 93%;
 }
 
 .accordion-container-right {
