@@ -14,6 +14,7 @@ import Error from '../pages/Error/Error'
 // -------------------------------------------
 
 export default function App() {
+
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />

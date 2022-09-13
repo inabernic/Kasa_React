@@ -1,25 +1,12 @@
 import React from 'react';
 import { Link} from "react-router-dom";
-import{ Component} from 'react'
-import './AccomodationCard.css';
 
 // ------- COMPONENTS -------------
-//import AccomodationPage from '../AccomodationCard/AccomodationPage' 
+import{ Component} from 'react'
 
-//import styled from 'styled-components;'
-// -------------------------------------------
-/* const CardLabel = styled.span`
-    color: #5843e4;
-    font-size: 22px;
-    font-weight: bold;
-`
+// ------- STYLES -------------
+import './AccomodationCard.css';
 
-const StyledLink = styled(Link)`
-    padding: 15px;
-    color: #8186a0;
-    text-decoration: none;
-    font-size: 18px;
-` */
 
 class AccomodationCard extends Component{
     constructor (props) {
