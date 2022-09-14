@@ -1,6 +1,7 @@
 .stars img {
     width: 25px;
     height: 25px;
+    margin: 0.1rem;
 }
 
 @media (max-width: 375px) {

@@ -78,7 +78,7 @@ export default function AccomodationPage() {
                     <AccordeonEffect
                         title="Equipement"
                         content={
-                            <ul>
+                            <ul className="list">
                                 {logement.equipments.map((equipment) => <li key={equipment}>{equipment}</li>)}
                             </ul>
                         }

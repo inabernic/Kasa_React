@@ -29,7 +29,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     width: 60%;
 }
 
@@ -38,9 +37,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center; 
-    margin-right: 10%;
-    margin-bottom: 10px;
-    width: 45%;
 }
 
 .main-container-tag {
@@ -88,6 +84,9 @@
     margin-top: -20px;
 }
 
+.list{
+    flex-direction: column;
+}
 
 @media (max-width: 375px) {
     .presentation {
