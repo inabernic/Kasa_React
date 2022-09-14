@@ -17,51 +17,23 @@
 } */
 
 
-.location_header {
+/* .location_header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin-left: 3%;
 }
+ */
 
-.location_subheader {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; 
-    margin-right: 10%;
-    margin-bottom: 10px;
-}
-
-.main-container-tag {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: left;
-    margin-left: 15px; */
-}
 
 .main-container-stars {
     display: flex;
     flex-direction: row;
 }
 
-.main-container-accordion {
-    display: flex;
-    margin-top: 10px;
-    flex-direction: row; 
-    justify-content: space-around;
-    margin-left: 3.5%;
-    width: 80%;
-
-}
-
-.accordion-container-right {
-    margin-right: -16%;
-}
-
 /* TITLE PAGE - LOCATION NAME*/
-
+/* 
 .title_locationpage {
     left: 6.94%;
     right: 48.96%;
@@ -76,10 +48,10 @@
     align-items: flex-end;
     color: #FF6060;
     margin-left: 108px;
-}
+} */
 
 /* SUBTITLE PAGE - LOCATION LOCALISATION*/
-
+/* 
 .subtitle_locationpage {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -91,7 +63,7 @@
     color: #FF6060;
     margin-left: 108px;
     margin-top: -25px;
-}
+} */
 
 
 @media (max-width: 375px) {
@@ -118,12 +90,12 @@
         flex-wrap: wrap;
     }
 
-    .title_locationpage {
+    /* .title_locationpage {
         font-size: 18px;
         line-height: 142.6%;
         margin-left: -10px;
         margin-bottom: 30px;
-    }
+    } */
 
     .subtitle_locationpage {
         font-size: 14px;

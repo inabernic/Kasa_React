@@ -45,6 +45,10 @@
         margin-right: -40%;
     }
 
+    .avatar-main{
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
     .avatar-main img {
         width: 32px;
         height: 32px

@@ -1,6 +1,6 @@
 .container_page{
-    max-width: 1400px;
-}
+    width: 1400px;
+} 
 .home{
     display: flex;
     align-items: center;

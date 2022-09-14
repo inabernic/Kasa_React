@@ -8,8 +8,8 @@ ul{
 }
 
 .location-card{
-    width: 291px;
-    height: 291px;
+    width: 23rem;
+    height: 19rem;
     border-radius: 10px;
     background: linear-gradient(#FF6060,#d67373) ;
     align-items: flex-end;
