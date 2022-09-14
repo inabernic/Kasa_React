@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Link} from "react-router-dom";
 
 // ------- COMPONENTS -------------
 import AccomodationCard from '../AccomodationCard/AccomodationCard' 
@@ -28,11 +27,6 @@ function AccommodationList(){
         setTimeout(() =>{
         }, 500);
     }, [])
-
-
-
-    /*   la boucle  */
-    /* l'affichage  des apartement*/
 
     return (
         <div className="container-list">          

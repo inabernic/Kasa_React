@@ -12,13 +12,11 @@
 }
 
 /* LOGO */
-
 .nav img {
     width: 250px;
 }
 
 /* MENU */
-
 .list-menu {
     display: flex;
     flex-direction: row;
@@ -42,7 +40,6 @@
     text-decoration-line: none;
     font-size: larger;
 }
-
 
 @media (max-width: 608px) {
     .navbar {
