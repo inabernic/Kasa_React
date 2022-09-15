@@ -1,7 +1,6 @@
 
 .accommodation_page{
     align-items: center;
-    width: 93%;
     margin: 3rem;
     margin-top: 0.4rem;
 }
@@ -88,32 +87,63 @@
     flex-direction: column;
 }
 
+@media (max-width: 462px) {
+    .accommodation_page {
+        align-items: center;
+        margin: 2.5rem;
+        margin-top: 0.4rem;
+        width: 85%;
+    }
+}
+
+
+
 @media (max-width: 375px) {
+.accommodation_page{
+    margin: 0; 
+    width: 100%;
+}
+
+.slideshow_location {
+    width: 88%;
+    margin: 2rem;
+    margin-bottom: 1rem;
+}
+
     .presentation {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 6%;
-        width: 85%;
+        justify-content: space-between;
+        width: 92%;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     .location_subheader {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        width: 100%;
+        height: 30px;
     }
+
+  /*   .host{
+        width: 50%;
+    } */
 
     .location_header {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        width: 85%;
     }
 
     .title_locationpage {
         font-size: 18px;
         line-height: 142.6%;
         margin-left: -10px;
-        margin-bottom: 30px;
+        margin-bottom: 1.5rem;
     }
 
     .subtitle_locationpage {
@@ -126,16 +156,23 @@
         flex-direction: row;
         justify-content: left;
         flex-wrap: wrap;
+        margin-left: -1rem;
+    }
+
+    .main-container-stars {
+        width: 55%;
+        margin-left: 1rem;
     }
 
     .main-container-accordion {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap; 
+        flex-direction: column; 
+        width: 87%;
+        margin-left: 2rem;
     }
 
-    .accordion-container-left {
-        margin-left: 15%;
+    .accordion-container-left, .accordion-container-right {
         margin-bottom: 5%;
+        width: 100%;
     }
 }

@@ -1,3 +1,7 @@
+body{
+    max-width: 1400px;
+}
+
 .container_page{
     width: 1400px;
 } 
@@ -6,6 +10,7 @@
     align-items: center;
     width: 93%;
     margin: 3rem;
+    margin-top: 0;
 }
 
 /* .navbar{
@@ -87,6 +92,10 @@
 }
 
 @media (max-width: 650px) {
+    .container_page{
+        width: 650px;
+    }
+    
     .body-home {
         width: 94%;
         margin: 18px;
@@ -98,13 +107,25 @@
         }
 }
 @media (max-width: 460px) {
+    .container_page{
+        width: 460px;
+    }
+
+    .home{
+        margin-left: 1rem;
+    }
     .body-home {
         width: 91%;
         margin: 18px;
     }
 
     .navbar{
-        width: 90%;
+        width: 86%;
+        margin-left: 2rem;
+     }
+
+     .background_container{
+        background: none;
      }
 
     .title_home{
@@ -138,7 +159,7 @@
     }
 
     .back_img{
-height: 111px;
+        height: 100px;
     }
 
     .back_img img {
@@ -152,9 +173,9 @@ height: 111px;
 
     .title_home {
         height: max-content;
-        width: 54%;
+        width: 46%;
         left: 10%;
-        top: 13%;
+        top: 5%;
         font-size: 23px;
         text-align: left;
     }
@@ -162,6 +183,8 @@ height: 111px;
 
     /* BACKGROUND LOCATIONCARD - HOME PAGE */
     .background_container {
+        background: none;
+        margin: 0;
         width: 100%;
         left: 0%;
         right: 0%;

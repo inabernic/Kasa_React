@@ -57,7 +57,7 @@ export default function AccomodationPage() {
                 </div>
 
                 <div className="location_subheader">
-                    <div>
+                    <div className="host">
                         <Avatar name={logement.host.name} picture={logement.host.picture}/>
                     </div>
 
