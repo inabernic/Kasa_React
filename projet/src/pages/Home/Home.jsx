@@ -13,7 +13,6 @@ export default function Home() {
 
 return (
     <div className='container_page'>
-
     <Nav />
     <div className="home">
     <div className="body-home">
