@@ -41,16 +41,17 @@
         width: 100%;
     }
 
-    .avatar-main{
+    .avatar-main {
         margin-bottom: 1rem;
         margin-top: 1rem;
     }
+
     .avatar-main img {
         width: 32px;
         height: 32px
     }
 
-    .avatar-name{
+    .avatar-name {
         width: 55%;
         display: flex;
         flex-wrap: wrap;

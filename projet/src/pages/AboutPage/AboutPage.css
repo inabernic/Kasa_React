@@ -1,4 +1,4 @@
-.container_about_page{
+.container_about_page {
     width: 100%;
 }
 
@@ -20,7 +20,7 @@
     position: relative;
 }
 
-.header_img{
+.header_img {
     width: 100%;
 }
 
@@ -44,18 +44,6 @@
         overflow: hidden;
         position: relative;
         margin-left: 5%;
-    }
-
-    .bgd {
-        position: absolute;
-        width: 94.5%;
-        height: 100%;
-        /* left: 0;
-        top: 0; */
-        margin: auto;
-        background: rgba(0,0,0,.5);
-        z-index: 2;
-        border-radius: 25px;
     }
 
     .container_about_page {

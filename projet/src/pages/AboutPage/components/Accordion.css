@@ -1,10 +1,8 @@
-/* STYLE ACCORDION SECTION */
 .accordion__section {
     display: flex;
     flex-direction: column;
 }
-  
-/* STYLE BUTTON */
+
 .accordion {
     width: 89%;
     height: 50px;
@@ -17,10 +15,8 @@
     align-items: center;
     border: none;
     outline: none;
-/* transition: background-color 0.6s ease; */
 }
-  
-/* STYLE CONTENT TITLE */
+
 .accordion__title {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
@@ -28,18 +24,15 @@
     text-align: left;
 }
 
-/* STYLE CHEVRON */
 .accordion__icon {
     margin-left: auto;
     transition: transform 0.6s ease;
 }
 
-/* ROTATION */
 .rotate {
     transform: rotate(90deg);
 }
 
-/* STYLE ACCORDION PANEL */
 .accordion__content {
     background-color: #F6F6F6;
     overflow: auto;
@@ -51,7 +44,6 @@
     border-radius: 5px;
 }
 
-/* STYLE TEXT */
 .accordion__text {
     color: #FF6060;
     font-family: "Montserrat", sans-serif;
@@ -63,12 +55,9 @@
     margin-block-end: 0;
 }
 
-/* CONTAINER */
-
 .accordion-container {
     margin-bottom: 20px;
     margin-left: 108px;
-    /* margin-right: none; */
     position: relative;
 }
 
@@ -87,7 +76,6 @@
         text-align: left;
     }
 
-    /* STYLE TEXT */
     .accordion__text {
         color: #FF6060;
         font-family: "Montserrat", sans-serif;
@@ -96,13 +84,12 @@
         padding: 18px;
     }
 
-    /* STYLE ACCORDION PANEL */
     .accordion__content {
         width: 335px;
     }
 
     .accordion-container {
         margin-top: 20px;
-        margin-left:-2px;
+        margin-left: -2px;
     }
 }

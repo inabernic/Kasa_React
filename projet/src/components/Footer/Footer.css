@@ -4,16 +4,16 @@
     height: 170px;
     background: #000000;
     margin-top: 5%;
-    }
-    
-    .footer img {
-        margin-top: 35px;
-        height: 39.44px;
-        width: 122px;
-        margin-left: 48%;
-    }
-    
-    .footer p {
+}
+
+.footer img {
+    margin-top: 35px;
+    height: 39.44px;
+    width: 122px;
+    margin-left: 48%;
+}
+
+.footer p {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -21,17 +21,17 @@
     line-height: 142.6%;
     text-align: center;
     color: #FFFFFF;
+}
+
+
+@media (max-width: 375px) {
+    .footer img {
+        height: 39.44px;
+        width: 150px;
+        margin-left: 100px;
     }
-    
-    
-    @media (max-width: 375px) {
-        .footer img {
-            height: 39.44px;
-            width: 150px;
-            margin-left: 100px;
-        }
-    
-        .footer p {
-            font-size: 12px;
-            }
+
+    .footer p {
+        font-size: 12px;
     }
+}

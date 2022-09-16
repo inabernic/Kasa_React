@@ -1,4 +1,4 @@
-.tag { 
+.tag {
     background: #FF6060;
     border-radius: 10px;
     width: 120px;
@@ -22,7 +22,7 @@
 @media (max-width: 375px) {
     .tag {
         width: 87px;
-        height: 23.5px; 
+        height: 23.5px;
         text-align: center;
         align-items: center;
         font-size: 10px;
