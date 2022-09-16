@@ -5,10 +5,7 @@
     justify-content: space-between;
     align-items: center;
     width: 93%;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    padding: 3rem;
 }
 
 /* LOGO */
