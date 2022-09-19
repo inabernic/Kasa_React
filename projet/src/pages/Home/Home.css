@@ -3,15 +3,20 @@ body {
 }
 
 .container_page {
-    width: 1400px;
+    max-width: 1400px;
+}
+
+.out_footer {
+    padding: 3rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
 }
 
 .home {
     display: flex;
     align-items: center;
-    width: 93%;
-    margin: 3rem;
-    margin-top: 0;
+    width: 100%;
+    margin-top: 1rem;
 }
 
 .logo {
@@ -87,15 +92,6 @@ body {
 }
 
 @media (max-width: 650px) {
-    .container_page {
-        width: 650px;
-    }
-
-    .body-home {
-        width: 94%;
-        margin: 18px;
-    }
-
     .title_home {
         width: 100%;
         top: 13%;
@@ -104,22 +100,8 @@ body {
 }
 
 @media (max-width: 460px) {
-    .container_page {
-        width: 460px;
-    }
-
-    .home {
-        margin-left: 1rem;
-    }
-
-    .body-home {
-        width: 91%;
-        margin: 18px;
-    }
-
     .navbar {
-        width: 86%;
-        margin-left: 2rem;
+        width: 100%;
     }
 
     .background_container {
@@ -127,9 +109,8 @@ body {
     }
 
     .title_home {
-        width: 100%;
-        top: 13%;
-        font-size: 32px;
+        top: 19%;
+        font-size: 26px;
     }
 }
 
@@ -138,17 +119,8 @@ body {
         width: 375px;
     }
 
-    .home {
-        width: 100%;
-    }
-
     .navbar {
-        width: 89%;
-    }
-
-    .body-home {
-        width: 89%;
-        margin: 18px;
+        width: 100%;
     }
 
     /* STYLE - IMG HEADER HOME PAGE */
@@ -161,21 +133,12 @@ body {
         height: 100px;
     }
 
-    .back_img img {
-        object-fit: cover;
-    }
-
-    .back_title {
-        background: rgb(84 89 102 / 50%);
-        z-index: 2;
-    }
-
     .title_home {
         height: max-content;
         width: 46%;
         left: 10%;
-        top: 5%;
-        font-size: 23px;
+        top: 8%;
+        font-size: 20px;
         text-align: left;
     }
 
@@ -184,12 +147,10 @@ body {
     .background_container {
         background: none;
         margin: 0;
-        width: 100%;
         left: 0%;
         right: 0%;
         top: 0%;
         bottom: 0%;
-        border-radius: 15px;
     }
 
     .location-card-info {

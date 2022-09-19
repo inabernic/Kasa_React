@@ -4,9 +4,6 @@ import axios from 'axios'
 // ------- COMPONENTS -------------
 import AccomodationCard from '../AccomodationCard/AccomodationCard'
 
-// -------- IMPORT STYLE -----------------
-import './AccommodationList.css'
-
 // ----------------------------------------------------
 
 function AccommodationList() {

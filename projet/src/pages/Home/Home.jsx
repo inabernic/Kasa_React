@@ -10,20 +10,22 @@ import './Home.css'
 export default function Home() {
   return (
     <div className="container_page">
-      <Nav />
-      <div className="home">
-        <div className="body-home">
-          <div className="img_title">
-            <div className="back_img">
-              <img src="../homebackgroundimg.png" alt="bgdimg" />
+      <div className="out_footer">
+        <Nav />
+        <div className="home">
+          <div className="body-home">
+            <div className="img_title">
+              <div className="back_img">
+                <img src="../homebackgroundimg.png" alt="bgdimg" />
+              </div>
+              <div className="back_img back_title">
+                <h2 className="title_home"> Chez vous, partout et ailleurs</h2>
+              </div>
             </div>
-            <div className="back_img back_title">
-              <h2 className="title_home"> Chez vous, partout et ailleurs</h2>
-            </div>
-          </div>
 
-          <div className="background_container">
-            <AccommodationList />
+            <div className="background_container">
+              <AccommodationList />
+            </div>
           </div>
         </div>
       </div>

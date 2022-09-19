@@ -4,6 +4,13 @@
     margin: 0.1rem;
 }
 
+@media (max-width: 462px) {
+    .stars img {
+        width: 17px;
+        height: 17px;
+    }
+}
+
 @media (max-width: 375px) {
     .stars img {
         width: 15px;

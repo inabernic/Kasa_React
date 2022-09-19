@@ -31,13 +31,14 @@
     margin-right: 10px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 460px) {
+    .avatar-name p {
+        font-size: 14px;
+    }
+}
 
+@media (max-width: 375px) {
     .avatar-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
         width: 100%;
     }
 
@@ -58,18 +59,6 @@
     }
 
     .avatar-name p {
-        left: 0%;
-        right: 31.37%;
-        top: 0%;
-        bottom: 0%;
-        font-family: "Montserrat", sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 142.6%;
-        display: flex;
-        align-items: flex-end;
         text-align: right;
-        margin-left: 50px;
     }
 }

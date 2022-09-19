@@ -40,58 +40,60 @@ export default function AccomodationPage() {
 
   return (
     <div className="container_page">
-      <Nav />
-      <div className="accommodation_page">
-        <div className="slideshow_location">
-          <Slideshow img={logement.pictures} alt="description" />
-        </div>
+      <div className="out_footer">
+        <Nav />
+        <div className="accommodation_page">
+          <div className="slideshow_location">
+            <Slideshow img={logement.pictures} alt="description" />
+          </div>
 
-        <div className="presentation">
-          <div className="location_header">
-            <div>
-              <h2 className="title_locationpage">{logement.title}</h2>
-              <p className="subtitle_locationpage">{logement.location}</p>
+          <div className="presentation">
+            <div className="location_header">
+              <div>
+                <h2 className="title_locationpage">{logement.title}</h2>
+                <p className="subtitle_locationpage">{logement.location}</p>
+              </div>
+
+              <div className="main-container-tag">
+                {logement.tags.map((tag) => (
+                  <Tag content={tag} key={tag} />
+                ))}
+              </div>
             </div>
 
-            <div className="main-container-tag">
-              {logement.tags.map((tag) => (
-                <Tag content={tag} key={tag} />
-              ))}
+            <div className="location_subheader">
+              <div className="host">
+                <Avatar
+                  name={logement.host.name}
+                  picture={logement.host.picture}
+                />
+              </div>
+
+              <div className="main-container-stars">
+                <Stars rating={logement.rating} key={logement.id} />
+              </div>
             </div>
           </div>
 
-          <div className="location_subheader">
-            <div className="host">
-              <Avatar
-                name={logement.host.name}
-                picture={logement.host.picture}
+          <div className="main-container-accordion">
+            <div className="accordion-container-left">
+              <AccordeonEffect
+                title="Description"
+                content={logement.description}
               />
             </div>
-
-            <div className="main-container-stars">
-              <Stars rating={logement.rating} key={logement.id} />
+            <div className="accordion-container-right">
+              <AccordeonEffect
+                title="Equipement"
+                content={
+                  <ul className="list">
+                    {logement.equipments.map((equipment) => (
+                      <li key={equipment}>{equipment}</li>
+                    ))}
+                  </ul>
+                }
+              />
             </div>
-          </div>
-        </div>
-
-        <div className="main-container-accordion">
-          <div className="accordion-container-left">
-            <AccordeonEffect
-              title="Description"
-              content={logement.description}
-            />
-          </div>
-          <div className="accordion-container-right">
-            <AccordeonEffect
-              title="Equipement"
-              content={
-                <ul className="list">
-                  {logement.equipments.map((equipment) => (
-                    <li key={equipment}>{equipment}</li>
-                  ))}
-                </ul>
-              }
-            />
           </div>
         </div>
       </div>
