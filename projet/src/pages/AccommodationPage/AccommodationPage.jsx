@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 // ------- COMPONENTS -------------
 import Nav from '../../components/Nav/Nav'
 import Footer from '../../components/Footer/Footer'
-import AccordeonEffect from './components/AccordeonEffect/AccordeonEffect'
+import AccordeonEffect from '../../components/AccordeonEffect/AccordeonEffect'
 import Avatar from './components/Avatar/Avatar'
 import Tag from './components/Tag/Tag'
 import Slideshow from './components/Slideshow/Slideshow'

@@ -9,7 +9,7 @@ export default function Nav() {
     <div className="navbar">
       <div className="logo">
         <Link className="nav" to="/">
-          <img src="./LOGO.svg" alt="logo application" />
+          <img src="../LOGO.svg" alt="logo application" />
         </Link>
       </div>
       <div className="list-menu">

@@ -5,7 +5,7 @@ import './AboutPage.css'
 import imageForDesktop from '../../assets/about_header_image_desktop.png'
 import imageForMobil from '../../assets/about_header_image_mobil.png'
 
-import Accordion from '../AboutPage/components/Accordion'
+import AccordeonEffect from '../../components/AccordeonEffect/AccordeonEffect'
 
 // ------- COMPONENTS -------------
 import Nav from '../../components/Nav/Nav'
@@ -30,28 +30,28 @@ export default function About() {
 
           <div className="container_about_page">
             <div className="accordion-container">
-              <Accordion
+              <AccordeonEffect
                 title="Fiabilité"
                 content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor..."
               />
             </div>
 
             <div className="accordion-container">
-              <Accordion
+              <AccordeonEffect
                 title="Respect"
                 content=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor..."
               />
             </div>
 
             <div className="accordion-container">
-              <Accordion
+              <AccordeonEffect
                 title="Service"
                 content=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor..."
               />
             </div>
 
             <div className="accordion-container">
-              <Accordion
+              <AccordeonEffect
                 title="Sécurité"
                 content=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor..."
               />
