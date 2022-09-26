@@ -2,7 +2,7 @@
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 288px;
+    font-size: 250px;
     line-height: 142.6%;
     display: flex;
     align-items: center;
@@ -19,13 +19,12 @@
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
-    line-height: 142.6%;
     display: flex;
     align-items: flex-end;
     text-align: center;
     color: #FF6060;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 16px;
 }
 
 .backhome {
@@ -62,7 +61,7 @@
         /* Oups! La page que vous demandez n'existe pas. */
         font-size: 20px;
         width: 218px;
-        margin-left: 3rem;
+        margin-left: 4rem;
     }
 
     .backhome {

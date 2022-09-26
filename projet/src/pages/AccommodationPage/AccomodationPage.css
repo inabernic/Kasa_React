@@ -85,6 +85,20 @@
     flex-direction: column;
 }
 
+
+
+@media (max-width: 680px) {
+    .presentation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location_subheader {
+        flex-direction: row-reverse;
+        height: 71px;
+    }
+}
+
 @media (max-width: 462px) {
     .presentation {
         display: flex;
