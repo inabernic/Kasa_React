@@ -15,9 +15,6 @@
 
 .error p {
     /* Oups! La page que vous demandez n'existe pas. */
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 36px;
     display: flex;
     align-items: flex-end;
@@ -45,7 +42,11 @@
 
 @media (max-width: 575px) {
     .error h1 {
-        font-size: 165px
+        font-size: 150px
+    }
+
+    .error p {
+        font-size: 26px;
     }
 }
 
