@@ -10,13 +10,15 @@ import Nav from '../../components/Nav/Nav'
 export default function Error() {
   return (
     <div className="container_page">
-      <Nav />
-      <div className="error">
-        <h1>404</h1>
-        <p>Oups! La page que vous demandez n'existe pas.</p>
-        <Link className="backhome" to="/">
-          Retourner sur la page d'accueil
-        </Link>
+      <div className="out_footer">
+        <Nav />
+        <div className="error">
+          <h1>404</h1>
+          <p>Oups! La page que vous demandez n'existe pas.</p>
+          <Link className="backhome" to="/">
+            Retourner sur la page d'accueil
+          </Link>
+        </div>
       </div>
     </div>
   )

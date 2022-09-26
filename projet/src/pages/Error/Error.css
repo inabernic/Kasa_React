@@ -1,8 +1,4 @@
 .error h1 {
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -12,7 +8,9 @@
     align-items: center;
     text-align: center;
     color: #FF6060;
-    margin-left: 30%;
+    justify-content: center;
+    margin-block-start: 2rem;
+    margin-block-end: 0.17rem;
 }
 
 .error p {
@@ -26,7 +24,7 @@
     align-items: flex-end;
     text-align: center;
     color: #FF6060;
-    margin-left: 20%;
+    justify-content: center;
     margin-top: 50px;
 }
 
@@ -40,29 +38,35 @@
     align-items: flex-end;
     text-decoration-line: underline;
     text-align: center;
-    margin-left: 40%;
-    margin-top: 8%;
+    justify-content: center;
+    margin-top: 14%;
     color: #FF6060;
 
 }
+
+@media (max-width: 575px) {
+    .error h1 {
+        font-size: 165px
+    }
+}
+
 
 @media (max-width: 375px) {
     .error h1 {
         /* 404 */
         font-size: 96px;
-        margin-left: 27%;
         text-align: center;
     }
 
     .error p {
         /* Oups! La page que vous demandez n'existe pas. */
-        font-size: 18px;
-        margin-left: 14%;
-        margin-right: 14%;
+        font-size: 20px;
+        width: 218px;
+        margin-left: 3rem;
     }
 
     .backhome {
         font-size: 14px;
-        margin-left: 85px;
+        margin-top: 34%;
     }
 }
