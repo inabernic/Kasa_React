@@ -60,9 +60,10 @@
 
     .error p {
         /* Oups! La page que vous demandez n'existe pas. */
-        font-size: 20px;
-        width: 218px;
-        margin-left: 4rem;
+        font-size: 21.5px;
+        width: 97%;
+        margin-left: 1rem;
+        text-align: center;
     }
 
     .backhome {
